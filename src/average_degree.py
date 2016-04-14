@@ -103,7 +103,7 @@ def main():
                                 ## new tweet comes late and is inside the 60s range
 				## retrieve and add hashtags to the mainMap list
                                 hashtagList = retriveHashtag(line.split('hashtags":[')[1].split('],"urls')[0])
-                                updateMap(hashtagList,maxTime)
+                                updateMap(hashtagList,str(newTimeStamp))
 				## calculate
                                 calculateAvg(mainMap)
         tweet.close()
